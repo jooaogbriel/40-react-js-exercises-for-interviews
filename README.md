@@ -1,1 +1,2 @@
-# 40-react-js-exercises-for-interviews
+# 40 react js exercises to prepare me for interviews
+basic to advanced
