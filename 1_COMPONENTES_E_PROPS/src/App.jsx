@@ -1,14 +1,37 @@
 import './App.css'
-import ButtonComponent from './components/ButtonComponent'
+import { ComponentWith3Props } from './components/ComponentWith3Props'
 import { HelloWorld } from './components/HelloWorld'
 import PropsComponent from './components/PropsComponent'
+import { CompositionTheComponents } from './components/CompositionTheComponents'
 
 function App() {
+  const members = [
+    {
+        name: 'João',
+        age: 20,
+        job: 'engennier'
+    },
+    {
+        name: 'Isis',
+        age: 22,
+        job: 'Doctor'
+    },
+    {
+        name: 'João',
+        age: 60,
+        job: 'mechanic'
+    }
+]
   return (
     <>
+      <h2>Crie um componente:</h2>
       <HelloWorld />
-      <ButtonComponent />
+      <h2>Utilizando Props</h2>
       <PropsComponent  name="Joao" /> 
+      <h2>Múltiplas props</h2>
+      <ComponentWith3Props name='João' age={20} job='Engennier'  />
+      <h2>Composição de componentes</h2>
+      <CompositionTheComponents members={members} />
     </>
   )
 }

@@ -1,35 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { ComponentWith3Props } from './components/ComponentWith3Props'
+import { HelloWorld } from './components/HelloWorld'
+import PropsComponent from './components/PropsComponent'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h2>Crie um componente:</h2>
+      <HelloWorld />
+      <h2>Utilizando Props</h2>
+      <PropsComponent  name="Joao" /> 
+      <h2>Múltiplas props</h2>
+      <ComponentWith3Props age={20} cpf='123-456-789-10' rua='Flores'  />
     </>
   )
 }
 
-export default App
+export default App;
