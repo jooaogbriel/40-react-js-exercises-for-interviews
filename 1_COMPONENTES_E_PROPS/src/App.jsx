@@ -3,6 +3,7 @@ import { ComponentWith3Props } from './components/ComponentWith3Props'
 import { HelloWorld } from './components/HelloWorld'
 import PropsComponent from './components/PropsComponent'
 import { CompositionTheComponents } from './components/CompositionTheComponents'
+import  ButtonComponent  from './components/ButtonComponent'
 
 function App() {
   const members = [
@@ -32,6 +33,8 @@ function App() {
       <ComponentWith3Props name='João' age={20} job='Engennier'  />
       <h2>Composição de componentes</h2>
       <CompositionTheComponents members={members} />
+      <h2>Botão usando estado</h2>
+      <ButtonComponent />
     </>
   )
 }
