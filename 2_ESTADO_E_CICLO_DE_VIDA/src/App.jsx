@@ -1,5 +1,6 @@
 import './App.css'
 import ButtonComponent from './components/ButtonComponent'
+import { Clock } from './components/Clock';
 import  Toggle  from './components/Toggle'
 
 function App() {
@@ -10,6 +11,8 @@ function App() {
       <Toggle  name="Joao" /> 
       <h2>Número de clicks no botão</h2>
       <ButtonComponent  />
+      <h2>Hora em tempo real usando useEffect</h2>
+      <Clock />
     </>
   )
 }
