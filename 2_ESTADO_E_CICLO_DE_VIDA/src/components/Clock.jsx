@@ -14,6 +14,6 @@ export const Clock = () => {
       },[]);
 
     return (
-        <h3>{time.toLocaleTimeString()}</h3>
+        <p>{time.toLocaleTimeString()}</p>
     )
 }
