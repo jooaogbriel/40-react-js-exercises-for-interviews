@@ -4,6 +4,7 @@ import { Clock } from './components/Clock';
 import  Toggle  from './components/Toggle'
 import {TodoList2} from './components/TodoListFilter';
 import TodoList from './components/TodoList';
+import CheckLarg from './components/CheckLarg';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
       <TodoList/>
       <h2>TODO LIST Filter</h2>
       <TodoList2/>
+      <h2>Check Width</h2>
+      <CheckLarg />
     </>
   )
 }
