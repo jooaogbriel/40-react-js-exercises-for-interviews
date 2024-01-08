@@ -2,7 +2,7 @@ import './App.css'
 import ButtonComponent from './components/ButtonComponent'
 import { Clock } from './components/Clock';
 import  Toggle  from './components/Toggle'
-import TodoList from './components/TodoList';
+import {TodoList2} from './components/TodoList2';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <h2>Hora em tempo real usando useEffect</h2>
       <Clock />
       <h2>TODO LIST</h2>
-      <TodoList />
+      <TodoList2/>
     </>
   )
 }
