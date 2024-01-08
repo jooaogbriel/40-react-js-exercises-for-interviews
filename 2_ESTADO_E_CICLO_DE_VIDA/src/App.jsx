@@ -5,6 +5,7 @@ import  Toggle  from './components/Toggle'
 import {TodoList2} from './components/TodoListFilter';
 import TodoList from './components/TodoList';
 import CheckLarg from './components/CheckLarg';
+import Api from './components/API';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
       <TodoList2/>
       <h2>Check Width</h2>
       <CheckLarg />
+      <h2>Chamada de uma api fake</h2>
+      <Api />
     </>
   )
 }
