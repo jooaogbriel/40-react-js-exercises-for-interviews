@@ -2,6 +2,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import  {Form}  from './Components/Form'
+import  DynamicForm  from './Components/DynamicForm'
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
       <h1>3 - Eventos e Formulários</h1>
       <h2>Formulário simples</h2>
       <Form />
+      <h2>Formulário Dinámico</h2>
+      <DynamicForm />
     </>
   )
 }
